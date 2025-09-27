@@ -55,7 +55,8 @@ void setup()
   
   // МОДУЛЬ ОСВЕЩЕНИЯ
   pinMode(LAMP, OUTPUT);
-  
+
+  // вывод в консоль переключения режимов работы лампы и работы режима лампы
   //Serial.println("Mode: 1");
   //Serial.print("Lamp on duration (const): ");
   //Serial.println(onTimeMode1);
@@ -109,7 +110,7 @@ void waterLevelTracking() {
     analogWrite(WATER_LEVEL_LED, 0);
   }
   // вывод данных в консоль
-  Serial.println(waterLevel);
+  //Serial.println(waterLevel);
 }
 
 // МОДУЛЬ ОТСЛЕЖИВАНИЯ КОНЦЕНТРАЦИИ СОЛЕЙ
